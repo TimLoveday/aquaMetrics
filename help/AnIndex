@@ -1,0 +1,15 @@
+aquaMetrics-package	aquaMetrics
+aquaMetrics	aquaMetrics
+CalcASI	CalcASI
+CalcCC	CalcCC
+CalcDARLEQ	CalcDARLEQ
+CalcLIFE	CalcLIFE
+CalcPSI	CalcPSI
+CalcSPEAR	CalcSPEAR
+LIFEFlowScores	LIFEFlowScores
+LookUpASI	LookUpASI
+LookUpCC	LookUpCC
+LookUpDARLEQ2	LookUpDARLEQ2
+PSISensitivity	PSISensitivity
+StandardiseRawTaxa	StandardiseRawTaxa
+TaxaList	TaxaList

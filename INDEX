@@ -1,0 +1,18 @@
+CalcASI                 Riverfly Angler's Score Index
+CalcCC                  Climate Change Metric
+CalcDARLEQ              Diatom Assessment of River and Lake Ecological
+                        Quality
+CalcLIFE                Lotic-invertebrate Index for Flow Evaluation
+CalcPSI                 Proportion of Sediment-sensitive Invertebrates
+CalcSPEAR               SPEcies At Risk
+LIFEFlowScores          LIFE. Scores of taxa associated with flow
+                        groups
+LookUpASI               Lookup ASI
+LookUpCC                Lookup Climate Change
+LookUpDARLEQ2           DARLEQ. TDIs associated with the presence of
+                        diatoms.
+PSISensitivity          PSI. Fine Sediment Sensitivity Rating
+                        definitons and abundance
+StandardiseRawTaxa      Standardise Raw Taxa
+TaxaList                Taxa lists from NEMS
+aquaMetrics             Freshwater Biotic indices
