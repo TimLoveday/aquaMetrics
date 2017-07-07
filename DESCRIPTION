@@ -1,13 +1,11 @@
 Package: aquaMetrics
 Type: Package
 Title: Freshwater Biotic indices
-Version: 0.98
-Date: 2015-02-10
+Version: 0.98-2
+Date: 2017-03-30
 Author: Scottish Environment Protection Agency
 Maintainer: Carlos Ruiz <carlos.ruiz@sepa.org.uk>
 Description: Metrics for assessing ecological indicators of biodiversity in rivers and lakes.
-LazyLoad: yes
-LazyData: no
-ZipData: no
+ByteCompile: yes
 License: MIT + file LICENSE
-Built: R 3.1.2; ; 2015-02-11 14:02:38 UTC; windows
+RoxygenNote: 6.0.1
