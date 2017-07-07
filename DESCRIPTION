@@ -3,8 +3,8 @@ Type: Package
 Title: Freshwater Biotic indices
 Version: 0.98-2
 Date: 2017-03-30
-Author: Scottish Environment Protection Agency
-Maintainer: Carlos Ruiz <carlos.ruiz@sepa.org.uk>
+Authors@R: c(person("Carlos","Ruiz",role="aut"),
+             person("Tim","Foster",email = "tim.foster@sepa.org.uk",role=c("ctb","cre"))) 
 Description: Metrics for assessing ecological indicators of biodiversity in rivers and lakes.
 ByteCompile: yes
 License: MIT + file LICENSE
