@@ -24,7 +24,7 @@ test_that("CalcDARLEQ returns same results as DARLEQ2 tool outputs", {
                                                package = "aquaMetrics"))
 
     # load matching outputs from DARLEQ2 - 'here's one I prepared earlier...'
-    riverDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQRiver2012.csv",
+    riverDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQRiver2012-tdi4.csv",
                                      package = "aquaMetrics"))
 
     lakesDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQLakes2012-ltdi2.csv",
