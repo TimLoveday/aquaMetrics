@@ -19,13 +19,23 @@ test_that("CalcDARLEQ returns same results as DARLEQ2 tool outputs", {
     # load example data
     riverAquaMetrics  <-  read.csv(system.file("extdata","diatomRivers2012-aquametrics-format.csv",
                                    package = "aquaMetrics"))
-    # load matching outputs from DARLEQ2 - 'one prepared earlier'
+
+    lakesAquaMetrics  <-  read.csv(system.file("extdata","diatomLakes2012-aquametrics-format.csv",
+                                               package = "aquaMetrics"))
+
+    # load matching outputs from DARLEQ2 - 'here's one I prepared earlier...'
     riverDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQRiver2012.csv",
                                      package = "aquaMetrics"))
+
+    lakesDARLEQRResults  <-  read.csv(system.file("extdata","ResultsDARLEQLakes2012-ltdi2.csv",
+                                                  package = "aquaMetrics"))
 
     # run example data through CalcDARLEQ function
     riverAquaMetricsResults  <-  CalcDARLEQ(riverAquaMetrics, metric="rivers")
     riverAquaMetricsResults  <- data.frame(riverAquaMetricsResults[1])
+
+    lakeAquaMetricsResults  <-  CalcDARLEQ( lakesAquaMetrics, metric="lakes")
+    lakeAquaMetricsResults  <- data.frame( lakeAquaMetricsResults[1])
 
     # need to round result like Excel
     round_excel = function(x, n) {
@@ -47,6 +57,10 @@ test_that("CalcDARLEQ returns same results as DARLEQ2 tool outputs", {
     # check CalcDARLEQ outputs match DARLEQ2 tool outputs
     expect_equal(round_excel(riverAquaMetricsResults$rivers.oTDI4,2), round_excel(riverDARLEQRResults$TDI4,2))
     expect_equal(round_excel(riverAquaMetricsResults$rivers.EQR.TDI4,2), round_excel(riverDARLEQRResults$EQR.TDI4,2))
+
+
+    expect_equal(round_excel(lakeAquaMetricsResults$lakes.oLTDI2,2), round_excel(lakesDARLEQRResults$LTDI2,2))
+    expect_equal(round_excel(lakeAquaMetricsResults$lakes.EQR.LTDI2,2), round_excel(lakesDARLEQRResults$EQR.LTDI2,2))
 
 
 })
