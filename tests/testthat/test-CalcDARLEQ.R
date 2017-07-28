@@ -26,4 +26,6 @@ riverAquaMetricsResults  <-  CalcDARLEQ(riverAquaMetrics, metric="rivers")
 riverAquaMetricsResults  <- data.frame(riverAquaMetricsResults[1])
 expect_equal(round(riverAquaMetricsResults$rivers.oTDI4,2), round(riverDARLEQRResults$TDI4,2))
 
+expect_equal(round(riverAquaMetricsResults$rivers.EQR.TDI4,2), round(riverDARLEQRResults$EQR.TDI4,2))
+
 })
