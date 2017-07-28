@@ -2,7 +2,7 @@ context("CalcDARLEQ")
 
 test_that("CalcDARLEQ returns correct error measures", {
    # skip_on_cran()
-    expect_silent(CalcDARLEQ(demo_data, metric = "rivers", version = "latest"))
+    expect_silent(CalcDARLEQ(demoDiatomRiverData, metric = "rivers", version = "latest"))
 
     bad_data <- data.frame(sampleID =c("1","2","3"),
                                 date = c("01/01/2002","01/01/2002","01/01/2002"))
