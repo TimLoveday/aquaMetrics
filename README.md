@@ -4,6 +4,10 @@
 
 # aquaMetrics package
 
+# Deprecated 
+# This package has been split into phytobenthosMetrics and a planned invertebrateMetrics package. 
+# Future work will be made in phytobenthosMetrics and/or invertebrateMetrics
+
 An R package to calculate aquatic metrics  
 
 In R: Install the development version from GitHub:  
